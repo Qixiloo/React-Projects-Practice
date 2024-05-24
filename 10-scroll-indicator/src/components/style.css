@@ -1,0 +1,27 @@
+.top-container {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: aqua;
+}
+
+.data-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.show-bar {
+  width: 100%;
+  height: 10px;
+  background-color: black;
+}
+
+.process-bar {
+  width: 0;
+  height: 10px;
+  background-color: yellow;
+}

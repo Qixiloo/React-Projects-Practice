@@ -14,15 +14,9 @@ export default function useLocalStorage(key, defaultValue) {
     return nowValue;
   });
 
+  useEffect(() => {
+    localStorage.setItem(key, JSON.stringify(value));
+  }, [value]);
 
-useEffect(()=>{
-console.log('key is', key)
-console.log('before change', localStorage.getItem(key))
-localStorage.setItem(key, JSON.stringify(value))
-console.log('after change', localStorage.getItem(key))
-
-
-},[value])
-
-return [value,setValue]
+  return [value, setValue];
 }
