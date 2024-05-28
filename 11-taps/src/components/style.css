@@ -1,0 +1,34 @@
+.wrappper{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+}
+
+.taps{
+width: 400px;
+display: flex;
+align-items: center;
+justify-content:  space-around;
+flex-direction: row;
+}
+
+.tap{
+height: 80%;
+background-color: aqua;
+border: none;
+padding: 10px 15px;
+margin-left:10px 10px;
+cursor: pointer;
+}
+
+.tap:active {
+  box-shadow: 2px 2px 5px #fc894d;
+}
+
+
+.tap:hover{
+
+background-color: rgb(126, 207, 51);
+}
