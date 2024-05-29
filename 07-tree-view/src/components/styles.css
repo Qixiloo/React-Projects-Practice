@@ -1,0 +1,19 @@
+.container {
+  background-color: rgb(109, 130, 247);
+  color: white;
+  font-weight: 600;
+  width: 30%;
+  height: 100vh;
+  padding-top: 10px;
+}
+
+.each-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.menu-list {
+  list-style: none;
+}
