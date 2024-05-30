@@ -1,0 +1,73 @@
+.container {
+  position: absolute;
+  top: 10%;
+}
+
+.button {
+  background-color: aquamarine;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  color: black;
+}
+
+
+.modal-container {
+  top: 200px;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid red;
+  width: 80vw;
+  animation-name: animateModal;
+  animation-duration: 0.5s;
+}
+
+.header {
+  padding: 4px 16px;
+  background-color: #5cb85c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.header::before,
+.header::after {
+  content: '';
+  flex: 1; /* 使伪元素均匀分布空间 */
+}
+
+.close {
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  right: 10px; /* 确保按钮始终在右侧 */
+}
+
+
+.body {
+  padding: 2px 16px;
+  height: 200px;
+}
+
+.footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+@keyframes animateModal {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
