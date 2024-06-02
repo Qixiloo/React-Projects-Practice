@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.search-container button {
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+}
+
+.user-info {
+  margin-top: 20px;
+  border: 2px solid black;
+  width: 50%;
+}
+
+.img-container{
+margin-top: 20px;
+
+}
+.img-container img{
+border-radius: 50%;
+width: 20%;
+}
+
+.profile-container {
+display: flex;
+flex-direction: column;
+font-size: large;
+font-weight: 800;
+
+}
+.name-container{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+.name-container p {
+font-size: large;
+font-weight: 800;
+}
+
+.name-container a:hover {
+font-size: large;
+font-weight: 800;
+color: blue;
+}
