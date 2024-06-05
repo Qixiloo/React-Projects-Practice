@@ -11,14 +11,6 @@ export default function UserProfile() {
     fetchUserProfile();
   }, []);
 
-  function handleSearch() {
-    fetchUserProfile();
-  }
-
-  function handleChange(e) {
-    setUserName(e.target.value);
-    console.log("usename", userName);
-  }
 
   async function fetchUserProfile() {
     try {
@@ -35,6 +27,16 @@ export default function UserProfile() {
       setLoading(false);
     }
   }
+  function handleSearch() {
+    fetchUserProfile();
+  }
+
+  function handleChange(e) {
+    setUserName(e.target.value);
+    console.log("usename", userName);
+  }
+
+
 
   if (loading) {
     return <h1>Loading,please wait!</h1>;
