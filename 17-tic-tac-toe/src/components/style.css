@@ -1,0 +1,33 @@
+.tic-tac-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  height: 100px;
+}
+
+.square {
+  background-color: aliceblue;
+  border: 1px solid black;
+  margin-left: -1px;
+  margin-top: -1px;
+  cursor: pointer;
+}
+
+.square:disabled {
+  background-color: rgb(143, 188, 227);
+  border: 1px solid black;
+  margin-left: -1px;
+  margin-top: -1px;
+  cursor: not-allowed;
+}
+.display {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
