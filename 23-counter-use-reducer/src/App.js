@@ -1,13 +1,13 @@
+import logo from "./logo.svg";
 import "./App.css";
-import Accordian from "./components/accordian";
+import Counter from "./components/index";
 
 function App() {
   return (
     <div className="App">
-      <Accordian />
+      <Counter />
     </div>
   );
 }
 
 export default App;
-
