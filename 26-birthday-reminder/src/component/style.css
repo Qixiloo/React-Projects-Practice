@@ -1,0 +1,93 @@
+:root {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  --background-color: #f28ab2;
+  /* for card  */
+  --card-box-shawdow: 5px 10px 20px 5px rgba(0, 0, 0, 0.2);
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --card-max-width: 700px;
+}
+
+.container {
+  background-color: aliceblue;
+  display: flex;
+  width: 90vw;
+  max-width: var(--card-max-width);
+  margin: 5rem 0;
+  padding: 1rem 2rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: var(--card-box-shawdow);
+}
+
+h2 {
+  width: 100%;
+  text-align: start;
+  font-size: 2.5rem;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: start;
+  padding: 0em 1em;
+  margin: 0.5em 0;
+  width: 100%;
+}
+
+.pic {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  box-shadow: var(--light-shadow);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+.info p {
+  text-align: start;
+  margin-bottom: 2rem;
+  color: rgb(161, 157, 157);
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  display: inline;
+}
+.info h4 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 1rem 0;
+  padding: 0;
+  background-color: aliceblue;
+  display: inline;
+}
+
+.btn {
+  margin: 1rem 0;
+  width: 80%;
+  border: none;
+  background-color: var(--background-color);
+  height: 3rem;
+  border-radius: 10px;
+  color: aliceblue;
+  font-size: medium;
+  font-weight: 500;
+  transition: all 0.1s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
