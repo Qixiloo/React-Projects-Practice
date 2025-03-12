@@ -1,0 +1,47 @@
+.container {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.multi_button {
+  background-color: aquamarine;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: medium;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.multi_button:focus {
+  outline: none;
+}
+
+.multi_button:hover {
+  transform: scale(1.2);
+}
+
+.card {
+  background-color: rgb(25, 19, 91);
+  width: 800px;
+  height: 110px;
+  margin-bottom: 20px;
+  padding: 15px;
+  color: white;
+}
+
+.question_box {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.answer {
+  font-size: medium;
+}
